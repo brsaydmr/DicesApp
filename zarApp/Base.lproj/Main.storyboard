@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="zarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pxfuel kopyası" translatesAutoresizingMaskIntoConstraints="NO" id="Kwb-KJ-L2B">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="hmJ-WR-hiG">
+                                <rect key="frame" x="35" y="281" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="A9o-pW-7cB"/>
+                                    <constraint firstAttribute="width" constant="128" id="FhC-YA-SMh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice2" translatesAutoresizingMaskIntoConstraints="NO" id="v7h-sO-nDi">
+                                <rect key="frame" x="230" y="281" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="cb6-1D-awj"/>
+                                    <constraint firstAttribute="width" constant="128" id="xfI-fq-uEE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwI-A9-7Um">
+                                <rect key="frame" x="137.66666666666666" y="457" width="118" height="57"/>
+                                <color key="backgroundColor" red="0.39492717389999998" green="0.34253785009999999" blue="0.25488495830000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="bGU-in-9N1"/>
+                                    <constraint firstAttribute="height" constant="57" id="kMb-fu-tmW"/>
+                                </constraints>
+                                <color key="tintColor" red="0.070237882439999996" green="0.047398008409999998" blue="0.027447363360000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Zar At" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="zarAtButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJF-C6-dip"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bNC-53-Fi1">
+                                <rect key="frame" x="35" y="281" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="RNO-8R-ctk"/>
+                                    <constraint firstAttribute="width" constant="128" id="XUa-pv-Eb5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u07-RP-vxA">
+                                <rect key="frame" x="230" y="281" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0gi-dp-uJd"/>
+                                    <constraint firstAttribute="width" constant="128" id="NDV-YN-T1h"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bNC-53-Fi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="4mx-pO-D4a"/>
+                            <constraint firstItem="VwI-A9-7Um" firstAttribute="top" secondItem="u07-RP-vxA" secondAttribute="bottom" constant="48" id="74A-dA-ZaB"/>
+                            <constraint firstItem="hmJ-WR-hiG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="8bs-zJ-Wrv"/>
+                            <constraint firstItem="v7h-sO-nDi" firstAttribute="leading" secondItem="bNC-53-Fi1" secondAttribute="trailing" constant="67" id="Ait-g1-pmu"/>
+                            <constraint firstAttribute="bottom" secondItem="Kwb-KJ-L2B" secondAttribute="bottom" id="GbL-oF-3OC"/>
+                            <constraint firstItem="hmJ-WR-hiG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="I2D-fa-M3b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v7h-sO-nDi" secondAttribute="bottom" constant="409" id="ICt-HX-UnK"/>
+                            <constraint firstItem="Kwb-KJ-L2B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IHf-9F-3tc"/>
+                            <constraint firstItem="Kwb-KJ-L2B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KSv-v7-XaP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hmJ-WR-hiG" secondAttribute="bottom" constant="409" id="RGd-PH-XPv"/>
+                            <constraint firstItem="VwI-A9-7Um" firstAttribute="top" secondItem="bNC-53-Fi1" secondAttribute="bottom" constant="48" id="Tjr-nH-GY4"/>
+                            <constraint firstItem="u07-RP-vxA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="XkH-KI-kgU"/>
+                            <constraint firstItem="Kwb-KJ-L2B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZP0-bH-bG0"/>
+                            <constraint firstItem="VwI-A9-7Um" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="brL-mF-cky"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VwI-A9-7Um" secondAttribute="bottom" constant="304" id="cnZ-6V-ju7"/>
+                            <constraint firstItem="v7h-sO-nDi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="eTy-i1-IRg"/>
+                            <constraint firstItem="bNC-53-Fi1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="222" id="hOv-qG-TQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u07-RP-vxA" secondAttribute="trailing" constant="35" id="kl0-8H-ZYR"/>
+                            <constraint firstItem="VwI-A9-7Um" firstAttribute="top" secondItem="hmJ-WR-hiG" secondAttribute="bottom" constant="48" id="m8V-qP-0FK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v7h-sO-nDi" secondAttribute="trailing" constant="35" id="y0D-Ri-FUk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animation1Image" destination="bNC-53-Fi1" id="jzO-0E-ECU"/>
+                        <outlet property="animation2Image" destination="u07-RP-vxA" id="UAg-tO-3qN"/>
+                        <outlet property="backgraundİmage" destination="Kwb-KJ-L2B" id="0fl-mb-etf"/>
+                        <outlet property="zar1image" destination="hmJ-WR-hiG" id="ihY-x0-DET"/>
+                        <outlet property="zar2image" destination="v7h-sO-nDi" id="je6-oe-FoB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.42748091603053" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice1" width="256" height="256"/>
+        <image name="dice2" width="256" height="256"/>
+        <image name="pxfuel kopyası" width="1125" height="2436"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
